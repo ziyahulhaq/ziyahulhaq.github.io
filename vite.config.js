@@ -21,4 +21,19 @@ export default defineConfig({
       "#windows": resolve(dirname(fileURLToPath(import.meta.url)), "src/windows"),
     },
   },
+   optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          icons: ['lucide-react'],
+        },
+      },
+    },
+  },
 });
