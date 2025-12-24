@@ -21,19 +21,19 @@ const navLinks = [
 const navIcons = [
   {
     id: 1,
-    img: "public_portfolio/public/icons/wifi.svg",
+    img: "/icons/wifi.svg",
   },
   {
     id: 2,
-    img: "public_portfolio/public/icons/search.svg",
+    img: "/icons/search.svg",
   },
   {
     id: 3,
-    img: "public_portfolio/public/icons/user.svg",
+    img: "/icons/user.svg",
   },
   {
     id: 4,
-    img: "public_portfolio/public/icons/mode.svg",
+    img: "/icons/mode.svg",
   },
 ];
 
