@@ -22,7 +22,7 @@ const {openWindow} = useWindowStore()
 
     <nav>
       <div>
-        <img src="public_portfolio/public/images/logo.svg" alt="logo" />
+        <img src="/images/logo.svg" alt="logo" />
         <p className="font-bold">Ziyavul Haq's PortFoloio</p>
         <ul>
           {navLinks.map(({ id, name ,type }) => (

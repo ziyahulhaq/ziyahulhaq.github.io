@@ -248,7 +248,7 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: ".ToDo.com",
+          name: "ToDo.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
