@@ -392,7 +392,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "",   /*/images/adrian.jpg */
     },
     {
       id: 2,
@@ -401,7 +401,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "", /*/images/adrian-2.jpg*/ 
     },
     {
       id: 3,
@@ -410,7 +410,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "",   /*/images/adrian-3.jpeg*/ 
     },
     {
       id: 4,
@@ -420,7 +420,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian-3.jpeg",
+      image: "",    /*/images/adrian-3.jpeg */
       description: [
         "Hi, I’m Ziyavul Haq, a passionate Web Developer with 1 year of hands-on experience building modern, responsive, and performance-focused web applications..",
         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
