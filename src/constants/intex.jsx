@@ -302,7 +302,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://ziyahulhaq.github.io/weatherapi/",
+          href: "https://weatherr-eight.vercel.app/",
           position: "top-20 left-20",
         },
         {
