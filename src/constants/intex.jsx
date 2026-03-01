@@ -231,8 +231,8 @@ const WORK_LOCATION = {
       name: "Modern ToDo list Website Application",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-8 left-8", // icon position inside Finder
+      windowPosition: "top-[8vh] left-6", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -240,7 +240,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-6 left-10",
           description: [
             "to-do list application is a simple yet powerful tool that helps users organize their daily tasks and manage time effectively. It allows users to add, edit, and delete tasks, making it easy to keep track of what needs to be done. By marking tasks as completed, users can visually see their progress, which increases productivity and motivation. A to-do list also helps reduce stress by clearly listing priorities instead of keeping them in mind. Whether used for personal work, studies, or professional projects, a to-do list improves focus, planning, and overall efficiency.",
             
@@ -253,7 +253,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://todoapp-phi-indol.vercel.app/",
-          position: "top-10 right-20",
+          position: "top-6 right-16",
         },
         {
           id: 4,
@@ -261,7 +261,7 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-44 left-10",
           imageUrl: "/images/project-1.png",
         },
         {
@@ -271,7 +271,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://google.com",
-          position: "top-60 right-20",
+          position: "top-44 right-16",
         },
       ],
     },
@@ -282,8 +282,8 @@ const WORK_LOCATION = {
       name: "Weather",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      position: "top-8 right-20",
+      windowPosition: "top-[8vh] left-44",
       children: [
         {
           id: 1,
@@ -291,7 +291,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 right-10",
+          position: "top-6 left-10",
           description: [
             "Weather App is a responsive web application that provides real-time weather information for any city around the world. It fetches live data from a weather API and displays essential details such as temperature, weather conditions, humidity, wind speed, and location-specific forecasts. The app features a clean and user-friendly interface, fast search functionality, and accurate results, making it easy for users to check current weather conditions anytime. Built using modern web technologies, this project demonstrates API integration, asynchronous data handling, and dynamic UI updates.",
           ],
@@ -303,7 +303,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://weatherr-eight.vercel.app/",
-          position: "top-20 left-20",
+          position: "top-6 right-16",
         },
         {
           id: 4,
@@ -311,7 +311,7 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 left-80",
+          position: "top-44 left-10",
           imageUrl: "/images/project-2.png",
         },
         {
@@ -321,7 +321,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://google.com",
-          position: "top-60 left-5",
+          position: "top-44 right-16",
         },
       ],
     },
@@ -332,8 +332,8 @@ const WORK_LOCATION = {
       name: "My Personal Portfolio",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      position: "top-44 left-8",
+      windowPosition: "top-[38vh] left-6",
       children: [
         {
           id: 1,
@@ -341,7 +341,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-6 left-10",
           description: [
             "I am Ziyavul Haq, a passionate web developer with around 1 year of experience in building modern and responsive web applications. I enjoy working with technologies like JavaScript, React, Node.js, and Tailwind CSS, and I love turning ideas into functional user-friendly interfaces. I am especially interested in debugging and building AI-based projects, and I’m always eager to learn new technologies and improve my skills.",
           ],
@@ -353,7 +353,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://ziyavulhaq.vercel.app",
-          position: "top-10 right-20",
+          position: "top-6 right-16",
         },
         {
           id: 4,
@@ -361,7 +361,7 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-44 left-10",
           imageUrl: "/images/project-3.png",
         },
         {
@@ -371,7 +371,55 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://google.com",
-          position: "top-60 right-20",
+          position: "top-44 right-16",
+        },
+      ],
+    },
+//project 4
+      {
+      id: 8,
+      name: "Share Bite",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-44 right-20",
+      windowPosition: "top-[38vh] left-44",
+      children: [
+        {
+          id: 1,
+          name: "Share Bite Project.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-6 left-10",
+          description: [
+"FoodShare App is a platform that helps homes, restaurants, and events track food expiry and donate surplus food to nearby NGOs, reducing waste and helping people in need",],
+        },
+        {
+          id: 2,
+          name: "Share Bite.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://share-bite-server.zhaq4740.workers.dev/",
+          position: "top-6 right-16",
+        },
+        {
+          id: 4,
+          name: "Share Bite.app.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-44 left-10",
+          imageUrl: "/images/project-4.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-44 right-16",
         },
       ],
     },
