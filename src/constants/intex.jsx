@@ -423,6 +423,55 @@ const WORK_LOCATION = {
         },
       ],
     },
+
+
+        {
+      id: 9,
+      name: "Cars",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-44 right-8",
+      windowPosition: "top-[38vh] right-8",
+      children: [
+        {
+          id: 1,
+          name: "Cars Project.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-6 left-10",
+          description: [
+"CarHub App is a platform that helps users explore, compare, and buy cars while providing details about price, features, and performance, making it easier to choose the right vehicle",],
+        },
+        {
+          id: 2,
+          name: "cars.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://carz-olive.vercel.app/",
+          position: "top-6 right-16",
+        },
+        {
+          id: 4,
+          name: "Cars.app.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-44 left-10",
+          imageUrl: "/images/project-5.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-44 right-16",
+        },
+      ],
+    },
   ],
 };
 
