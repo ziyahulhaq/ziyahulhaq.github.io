@@ -9,6 +9,7 @@ import Text from "./window/Text"
 import Image from "./window/Image"
 import Contect from "./window/Contect"
 import Home from "#components/Home"
+import SpotlightSearch from "#components/SpotlightSearch"
 import gsap from "gsap"
 import { Draggable } from "gsap/Draggable"
 
@@ -28,6 +29,7 @@ const App = () => {
     <Image/>
     <Contect/>
     <Home/>
+    <SpotlightSearch/>
 
 
     </main>
@@ -44,7 +46,6 @@ export default App
 
 
 //          https://todo-appp-kappa.vercel.app/
-
 
 
 

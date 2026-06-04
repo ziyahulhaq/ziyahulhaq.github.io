@@ -393,4 +393,109 @@ body {
       }
     }
   }
+
+  /* macOS Spotlight Search */
+  .spotlight-page-backdrop {
+    @apply fixed inset-0 z-[1399];
+    background:
+      radial-gradient(circle at 50% 12%, rgba(92, 119, 255, 0.18), transparent 34%),
+      linear-gradient(135deg, rgba(9, 13, 36, 0.22), rgba(47, 20, 74, 0.2));
+    backdrop-filter: blur(2px);
+  }
+
+  .spotlight-search-shell {
+    @apply fixed left-1/2 top-[18vh] z-[1400] -translate-x-1/2;
+    width: min(640px, 86vw);
+  }
+
+  .spotlight-search-container {
+    @apply h-[62px] w-full overflow-hidden rounded-[28px];
+    background:
+      linear-gradient(135deg, rgba(18, 32, 69, 0.64), rgba(54, 30, 86, 0.6) 54%, rgba(12, 17, 48, 0.66)),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.04));
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow:
+      0 24px 72px rgba(3, 7, 24, 0.42),
+      0 0 48px rgba(78, 111, 255, 0.2),
+      0 0 80px rgba(168, 85, 247, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.28),
+      inset 0 -1px 8px rgba(11, 15, 37, 0.28);
+    transition:
+      border-color 220ms ease,
+      box-shadow 220ms ease,
+      background 220ms ease;
+  }
+
+  .spotlight-search-container-focused {
+    border-color: rgba(255, 255, 255, 0.34);
+    box-shadow:
+      0 28px 84px rgba(3, 7, 24, 0.48),
+      0 0 64px rgba(99, 143, 255, 0.32),
+      0 0 110px rgba(190, 116, 255, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.34),
+      inset 0 -1px 10px rgba(11, 15, 37, 0.2);
+  }
+
+  .spotlight-search-inner {
+    @apply flex h-full items-center gap-4 px-5;
+  }
+
+  .spotlight-search-icon {
+    @apply flex size-6 shrink-0 items-center justify-center;
+    color: rgba(232, 238, 255, 0.86);
+    filter: drop-shadow(0 0 12px rgba(136, 164, 255, 0.28));
+  }
+
+  .spotlight-search-input {
+    @apply min-w-0 flex-1 bg-transparent text-[21px] font-thin text-white outline-none;
+    appearance: none;
+    caret-color: rgba(244, 247, 255, 0.96);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  .spotlight-search-input::placeholder {
+    color: rgba(231, 237, 255, 0.58);
+    font-weight: 200;
+  }
+
+  .spotlight-search-input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .spotlight-shortcut-badge {
+    @apply shrink-0 rounded-[10px] px-2.5 py-1 text-xs leading-none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      0 6px 18px rgba(0, 0, 0, 0.12);
+    color: rgba(237, 242, 255, 0.72);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    .spotlight-search-shell {
+      @apply top-[16vh];
+      width: min(610px, 88vw);
+    }
+
+    .spotlight-search-container {
+      @apply h-[58px] rounded-[26px];
+    }
+
+    .spotlight-search-input {
+      @apply text-[19px];
+    }
+  }
+
+  @media (max-width: 560px) {
+    .spotlight-shortcut-badge {
+      @apply hidden;
+    }
+  }
 }
