@@ -478,6 +478,129 @@ body {
     font-weight: 400;
   }
 
+  .spotlight-results-panel {
+    @apply mt-3 max-h-[58vh] overflow-y-auto rounded-[28px] p-3;
+    background:
+      linear-gradient(135deg, rgba(15, 22, 50, 0.68), rgba(49, 31, 77, 0.64) 54%, rgba(10, 16, 42, 0.7)),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.035));
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow:
+      0 30px 90px rgba(3, 7, 24, 0.52),
+      0 0 72px rgba(95, 118, 255, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18),
+      inset 0 -1px 14px rgba(0, 0, 0, 0.16);
+    scrollbar-width: none;
+  }
+
+  .spotlight-results-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .spotlight-results-section {
+    @apply space-y-1.5;
+  }
+
+  .spotlight-results-section + .spotlight-results-section {
+    @apply mt-3;
+  }
+
+  .spotlight-results-label {
+    @apply px-3 pb-0.5 text-[12px] font-medium;
+    color: rgba(235, 241, 255, 0.54);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .spotlight-top-hit,
+  .spotlight-project-result {
+    @apply flex w-full items-center text-left transition-all duration-200;
+    border: 1px solid transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .spotlight-top-hit {
+    @apply gap-4 rounded-[20px] px-4 py-3.5;
+    min-height: 108px;
+  }
+
+  .spotlight-project-list {
+    @apply space-y-1;
+  }
+
+  .spotlight-project-result {
+    @apply gap-3 rounded-[17px] px-3 py-2.5;
+    min-height: 70px;
+  }
+
+  .spotlight-top-hit:hover,
+  .spotlight-project-result:hover {
+    background: rgba(255, 255, 255, 0.075);
+  }
+
+  .spotlight-result-active {
+    background:
+      linear-gradient(135deg, rgba(83, 131, 255, 0.28), rgba(161, 108, 255, 0.22)),
+      rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow:
+      0 0 34px rgba(108, 141, 255, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  }
+
+  .spotlight-folder-icon {
+    @apply flex size-16 shrink-0 items-center justify-center rounded-2xl;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04)),
+      rgba(255, 255, 255, 0.06);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      0 10px 28px rgba(0, 0, 0, 0.18);
+  }
+
+  .spotlight-folder-icon img {
+    @apply size-12 object-contain;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.2));
+  }
+
+  .spotlight-folder-icon-small {
+    @apply size-12 rounded-xl;
+  }
+
+  .spotlight-folder-icon-small img {
+    @apply size-9;
+  }
+
+  .spotlight-top-hit-content,
+  .spotlight-project-copy {
+    @apply flex min-w-0 flex-1 flex-col;
+  }
+
+  .spotlight-result-title {
+    @apply truncate text-[17px] font-medium;
+    color: rgba(249, 251, 255, 0.94);
+    letter-spacing: 0;
+  }
+
+  .spotlight-result-description {
+    @apply mt-1 line-clamp-2 text-[13px] leading-[1.35];
+    color: rgba(231, 238, 255, 0.62);
+    letter-spacing: 0;
+  }
+
+  .spotlight-result-subtitle {
+    @apply mt-0.5 truncate text-[13px];
+    color: rgba(231, 238, 255, 0.62);
+    letter-spacing: 0;
+  }
+
+  .spotlight-result-tech {
+    @apply mt-1 truncate text-[12px] font-normal;
+    color: rgba(191, 211, 255, 0.72);
+    letter-spacing: 0;
+  }
+
   @media (max-width: 768px) {
     .spotlight-search-shell {
       @apply top-[16vh];
@@ -491,11 +614,31 @@ body {
     .spotlight-search-input {
       @apply text-[19px];
     }
+
+    .spotlight-results-panel {
+      @apply max-h-[62vh] rounded-[26px] p-2.5;
+    }
+
+    .spotlight-top-hit {
+      @apply min-h-24 gap-3 rounded-[18px] px-3 py-3;
+    }
+
+    .spotlight-folder-icon {
+      @apply size-14;
+    }
+
+    .spotlight-folder-icon img {
+      @apply size-10;
+    }
   }
 
   @media (max-width: 560px) {
     .spotlight-shortcut-badge {
       @apply hidden;
+    }
+
+    .spotlight-project-result {
+      @apply min-h-16;
     }
   }
 }
